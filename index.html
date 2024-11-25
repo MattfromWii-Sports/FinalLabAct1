@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUZ</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="to-do-container">
+      <div class="popup">
+        <input type="text" id="popup-input" />
+        <div class="buttons">
+          <button id="popup-submit" class="btn">SUBMIT</button>
+          <button id="popup-cancel" class="btn" onclick=" closePopup()">
+            CANCEL
+          </button>
+        </div>
+      </div>
+
+      <section class="to-do">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task"
+          autocomplete="off"
+        />
+        <button id="addTaskButton" class="btn">ADD TASK</button>
+        <div class="line">
+          <button class="delete-all">DELETE ALL</button>
+        </div>
+        <ul id="taskList">
+          <!-- tasks go here -->
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
